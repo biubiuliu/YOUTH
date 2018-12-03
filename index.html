@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>之于--学分银行</title>
+    <meta name="keywords" content="之于--学分银行,在线教育,在线教学,开源教学软件" />
+    <meta name="description" content="之于是面向个人、学校、培训机构及企业用户的友好、开源、高性价比的在线教育建站系统。之于提供在线教学、网校管理、云视频点播、直播、移APP等功能，为使教育机构能够以最低成本开展在线教学活动，zhiyu也提供云服务器，云视频、云直播和移动APP定制服务，并配备相应的技术支持服务，让客户搭建自有品牌网校和搭积木一样简单。zhiyu产品及服务大大降低了传统教育培训机构进入在线教育行业的门槛。与其他在线教育产品相比，zhiyu具有完整，高自由度，高性价比的产品体验，使用其搭建在线教学网站是快速进入在线教育的最佳选择方案。zhiyu开源并免费提供给非商业用途用户使用，用户可在3分钟内搭建功能完备的在线教育网站。"
+    />
+    <meta content="XZFd2nPYo_aO_jE7z2MqfbuoeI4RdUZ3GPu1CcjpM-o" name="csrf-token" />
+    <meta content="1" name="is-login" />
+    <meta content="0" name="is-open" />
+
+    <link href="./static/assets/v2/bootstrap/css/bootstrap.css?7.5.12" rel="stylesheet" />
+    <link rel="stylesheet" media="screen" href="./static/assets/css/common.css?7.5.12" />
+    <link rel="stylesheet" media="screen" href="./static/assets/css/font-awesome.min.css?7.5.12" />
+    <link rel="stylesheet" media="screen" href="./static/assets/v2/css/es-icon.css?7.5.12" />
+    <link href="./static/assets/v2/css/main.css?7.5.12" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+<script>
+    var app = {};
+    app.debug = false;
+    app.version = '7.5.12';
+    app.httpHost = 'http://localhost';
+    app.basePath = '';
+    app.theme = 'jianmo';
+    app.themeGlobalScript = 'theme/global-script';
+    app.jsPaths = {
+        "common": "common",
+        "theme": "\/static\/themes\/jianmo\/js",
+        "customwebbundle": "\/static\/bundles\/customweb\/js",
+        "topxiawebbundle": "\/static\/bundles\/topxiaweb\/js",
+    };
+
+    app.crontab = '/common/crontab';
+
+    var CKEDITOR_BASEPATH = app.basePath + '/static/assets/libs/ckeditor/4.6.7/';
+    var CLOUD_FILE_SERVER = "";
+
+    app.config = {
+        "api": {
+            "weibo": {
+                "key": ""
+            },
+            "qq": {
+                "key": ""
+            },
+            "douban": {
+                "key": ""
+            },
+            "renren": {
+                "key": ""
+            }
+        },
+        "cloud": {
+            "video_player": "http:\/\/cdn.staticfile.org\/GrindPlayerCN\/1.0.2\/GrindPlayer.swf",
+            "video_player_watermark_plugin": "http:\/\/cdn.staticfile.org\/GrindPlayerCN\/1.0.2\/Watermake-1.0.3.swf",
+            "video_player_fingerprint_plugin": "http:\/\/cdn.staticfile.org\/GrindPlayerCN\/1.0.2\/Fingerprint-1.0.1.swf"
+        },
+    };
+
+    app.arguments = {};
+
+    app.scripts = [ "es-bar\/index" ];
+    app.lessonCopyEnabled = '0';
+    app.cloudSdkCdn = '';
+    app.mainScript = './static/bundles/topxiaweb/js/app.js?7.5.12';
+    app.lang = 'zh_CN';
+</script>
+<script src="./static/assets/libs/seajs/seajs/2.2.1/sea.js?7.5.12"></script>
+<script src="./static/assets/libs/seajs/seajs-style/1.0.2/seajs-style.js?7.5.12"></script>
+<script src="./static/assets/libs/seajs-global-config.js?7.5.12"></script>
+
+<script>
+    seajs.use(app.mainScript);
+</script>
+
+</html>
